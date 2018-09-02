@@ -1,0 +1,7 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  width: 10%;
+  text-align: left;
+}
