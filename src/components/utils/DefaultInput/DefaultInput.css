@@ -1,0 +1,11 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  width: 70%;
+  text-align: left;
+  padding: 10px;
+}
+.inputContainer > p {
+  margin: 0px;
+}
