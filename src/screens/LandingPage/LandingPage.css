@@ -1,18 +1,28 @@
 .LandingPage {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 }
 
 .LandingPage-logo {
   animation: LandingPage-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 50px;
 }
 
 .LandingPage-header {
   background-color: #222;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
+  width: 100%;
 }
 
 .LandingPage-title {

@@ -6,7 +6,7 @@ export default class DefaultInput extends Component {
     return (
       <div className="inputContainer">
         <p>{this.props.children}</p>
-        <input placeholder={this.props.placeholder} />
+        <input placeholder={this.props.placeholder} onChange={this.props.onChange}/>
       </div>
     );
   }

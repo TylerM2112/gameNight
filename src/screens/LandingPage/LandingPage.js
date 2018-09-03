@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import logo from '../../logo.svg';
 import './LandingPage.css';
 
-import DefaultInput from '../../components/utils/DefaultInput/DefaultInput';
-import DefaultButton from '../../components/utils/DefaultButton/DefaultButton';
+import GamePicker from '../../components/GamePicker/GamePicker';
+import DiceRoller from '../../components/DiceRoller/DiceRoller';
+
 
 class LandingPage extends Component {
   render() {
@@ -13,8 +14,10 @@ class LandingPage extends Component {
           <img src={logo} className="LandingPage-logo" alt="logo" />
           <h1 className="LandingPage-title">Welcome to Game Night!</h1>
         </header>
-        <DefaultInput placeholder="add your game here!">game title</DefaultInput>
-        <DefaultButton onClick={() => alert('Gotcha!')}>Add</DefaultButton>
+        <div className="mainContent">
+          <GamePicker />
+          <DiceRoller />
+        </div>
       </div>
     );
   }
