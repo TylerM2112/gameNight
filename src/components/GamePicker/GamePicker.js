@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 
 import './GamePicker.css';
 
-import DefaultInput from '../utils/DefaultInput/DefaultInput';
-import DefaultButton from '../utils/DefaultButton/DefaultButton';
+import Roller from './Roller/Roller';
+import {games} from './games';
 
 export default class GamePicker extends Component {
-
   constructor() {
-    let games = ['Dominion', 'Exploding Kittens', 'Munchkins', 'Pandemic', 'Bravest Warriors', 'Catan', 'Boss Monster', 'Terraforming Mars']
     super();
     this.state = {
       gameList: games,
       gameInput: '',
       selectedGame: '',
+      gameScroller: false,
     }
   }
 
@@ -38,15 +37,6 @@ export default class GamePicker extends Component {
     )
   }
 
-  pickGame = () => {
-    let gameList = this.state.gameList;
-    let random = gameList[Math.floor(Math.random() * gameList.length)];
-
-    this.setState({
-      selectedGame: random
-    })
-  }
-
   render() {
     return (
       <div className="pickerContainer">
@@ -54,14 +44,8 @@ export default class GamePicker extends Component {
           <h4>available games to play...</h4>
           {this.displayList()}
         </div>
-        <DefaultInput placeholder="game title" onChange={(e) => {
-          this.setState({ gameInput: e.target.value })
-        }}>add a game here...</DefaultInput>
-          <DefaultButton onClick={this.addGame}>Add</DefaultButton>
         <div className="chosenGame">
-          <h3>And the winning game is...</h3>
-          <p>{this.state.selectedGame}</p>
-          <DefaultButton onClick={this.pickGame}>Click to Pick!</DefaultButton>
+          <Roller />
         </div>
 
       </div>

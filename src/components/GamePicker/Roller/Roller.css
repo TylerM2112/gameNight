@@ -1,0 +1,30 @@
+.container {
+  border:solid black 1px;
+  height:40px;
+  overflow:hidden;
+  text-align: center;
+  font-size: 40px
+}
+.innerContainer {
+  animation: containerAni 6s infinite linear;
+  animation-direction: reverse;
+}
+
+.gameName {
+  
+}
+
+@keyframes containerAni {
+  0%{
+  transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(0%)
+  }
+  80%{
+    transform: translateY(-60%);
+  }
+  100%{
+    transform: translateY(-100%);
+  }
+}

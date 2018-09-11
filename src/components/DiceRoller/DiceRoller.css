@@ -1,0 +1,14 @@
+.diceRollerContainer {
+  width: 20%;
+  border: 1px black solid;
+}
+.diceSelector {
+  font-size: 15px;
+}
+
+.displayRoll {
+  border: 1px black solid;
+  margin: auto;
+  width: 50px;
+  font-size: 30px;
+}
