@@ -1,0 +1,86 @@
+.TMmainContainer > div {
+  margin: 10px 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* height:50vh; */
+}
+
+.TMmainContainer > div > div {
+  width:30%;
+}
+
+.TMmainContainer button {
+  padding: 10px;
+}
+
+.modal  {
+  z-index: 1000;
+  position: fixed;
+  top: -10px;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  /* border: solid black 1px; */
+  /* display: block; */
+  /* justify-content: space-between !important; */
+}
+
+.flexDiv {
+    /* border: solid black 1px; */
+    width: 90vw !important;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: space-between;
+  
+}
+
+.flexDiv > div {
+ flex: 1 1;
+}
+
+h1{
+  width: 100vw;
+  padding: 0;
+  margin: 10px;
+}
+
+
+.backBtn {
+  /* position: fixed; */
+  top:0;
+  left:0;
+  height: 100vh;
+  border: none;
+  padding: 10px;
+  width: 20%;
+  background-color: #20A70D;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.minusBtn {
+  background-color: red;
+  border: none;
+  min-width: 45%;
+  max-width: 45%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  padding: 10px 0;
+  color: white;
+  border-radius: 5px;
+}
+.plusBtn {
+  background-color: green;
+  border: none;
+  min-width: 45%;
+  max-width: 45%;
+  color:white;
+  border-radius: 5px;
+  /* padding: 10px; */
+}
